@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <!-- External CSS -->
+     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    
+    <form action="register.html" method="GET">
+        <div>
+            <label>Enter your username</label><br/>
+            <input name="uname" type="text" placeholder="enter username"/><br/>
+        </div>
+        <div>
+            <label>Enter your email</label><br/>
+            <input name="email" type="email" placeholder="enter email address"/><br/>
+        </div>
+        <div>
+            <label>Enter your password</label><br/>
+            <input name="password" type="password" placeholder="enter password"/><br/>
+        </div>
+        <div>
+            <label>Enter your adreess</label><br/>
+            <textarea name="address" placeholder="type your address"></textarea><br/>
+        </div>
+        <div>
+            <label>Enter your date of birth</label><br/>
+            <input name="dob" type="date" placeholder="enter dob"/><br/>
+        </div>
+        <div>
+            <label>Select your gender</label><br/>
+            <label for="male">Male</label>
+            <input name="gender" type="radio" value="male" id="male" />&nbsp;
+            <label for="female">Female</label>
+            <input name="gender" type="radio" value="female" id="female" />&nbsp;
+            <label for="other">Other</label>
+            <input name="gender" type="radio" value="other" id="other"/><br/>
+        </div>
+        <div>
+            <label>Select your preferred areas</label><br/>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="html" value="html" id="html" /><br/>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" value="css" id="css" /><br/>
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="js" value="js" id="js" /><br/>
+            <label for="java">JAVA</label>
+            <input type="checkbox" name="java" value="java" id="java" /><br/>
+            <label for="python">Python</label>
+            <input type="checkbox" name="python" value="python" id="python" /><br/>
+        </div>
+        <div>
+            <label>Select your province</label>
+            <select name="province">
+                <option>Western</option>
+                <option>Central</option>
+                <option>Southern</option>
+                <option>Nothern</option>
+                <option>Eastern</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Register" />&nbsp;&nbsp;
+            <input type="button" value="Cancel"/>
+        </div>
+
+    </form>
+
+</body>
+</html>

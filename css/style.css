@@ -1,0 +1,51 @@
+body{
+    background-color: bisque;
+}
+p{
+    color : rgb(41, 124, 208);
+}
+
+#selected {
+    color : rgb(143, 5, 115);    
+}
+
+.large{
+    font-size: 30px;
+}
+
+.red{
+    color : white;
+    background-color: red;
+}
+
+.shadow{
+    text-shadow: 2px 2px 2px #000000;
+}
+
+
+.A{
+    background-color: rgb(107, 206, 7);
+    font-size: 24px;
+}
+
+.B {
+    background-color: darkorange;
+    color: #000000;
+}
+
+.C{
+    background-color: hotpink;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#color-head{
+    color: rgb(34, 55, 66);
+    background-color: rgba(42, 163, 238, 0.557);
+    border: 3px double black;
+}
+
+.red{
+
+}
+

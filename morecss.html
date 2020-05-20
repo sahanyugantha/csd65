@@ -52,13 +52,162 @@
 
         #hp:hover{
             background-color: rgb(14, 103, 73);
+          
             border: 2px solid rgb(121, 21, 21);
         }
+        
+        #main-tbl table,  #main-tbl tr,  #main-tbl td,  #main-tbl th{
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
 
+        #main-tbl{
+            margin: 30px;
+        }
+
+        #main-tbl td,  #main-tbl th{
+            padding: 2px 5px;
+        }
+
+        #main-tbl tr{
+            background-color: #bde5fd;
+        }
+
+        #main-tbl tr:hover{
+            background-color: #73c0ee;
+        }
+
+        /* #main-tbl tr:nth-child(3), #main-tbl tr:nth-child(4){
+            background-color: #f97d7d;
+        } */
+
+        #main-tbl tr:nth-child(even){
+            background-color: #ffffff;
+        }
+
+        #heading{
+            color :#ff0000
+        }
+
+        #heading::first-letter{
+            color: black;
+        }
+
+        form input[type="email"]{
+            width : 300px;
+            background-color: beige;
+        }
+
+        #attr-cont [class ^= "text"]{
+            color: #ff0000;
+        }
+
+        #attr-cont [class $= "note"]{
+            text-decoration: underline;
+        }
+
+        #title{
+            color: rgb(125, 4, 81);
+            text-align: center;
+            text-shadow: 2px 2px 5px #a83a3a;
+        }
+
+        #box{
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+            padding: 5px;
+            background-color: chocolate;
+            /* box-shadow: 5px 5px 5px #000000; */
+        }
+        #box:hover{
+            box-shadow: 5px 5px 5px #000000;
+            cursor: pointer;
+        }
+
+        #logo{
+            width: 100px;
+            height: 100px;
+            background-image: url('images/mj.jpg');
+            background-size: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
+
+    <h1 id="title">Welcome to CSD 65 Software Engineering</h1>
+
+    <div id="logo">
+
+    </div>
+
+    <div id="box">
+        <p>Some texts are here</p>
+    </div>
+
+    <div id="attr-cont">
+        <p class="text-some">Some text here</p>
+        <p class="text-note">Some Note  here </p>
+        <h2 class="head-some">Some text here </h2>
+        <p class="textsome">Some text here </p>
+        <h4 class="headnote">Some text here </h4>
+    </div>
+
+
+    <form>
+        <input type="text" placeholder="type your name"/> <br/>
+        <input type="email" placeholder="type your email"/> <br/>
+        <input type="password" placeholder="type your password"/> <br/>
+        <input  placeholder="Just another field"/> <br/>
+    </form>
+
+    <h1 id="heading">CSD 65</h1>
+    <div id="main-tbl">
+
+        <table id="tbl">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Andrew</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Rebecca</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Shakeel</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Samrath</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Oshada</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>Afzal</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+    </div>
     
+
+
     <div id="container">
 
 

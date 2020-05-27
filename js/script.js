@@ -1,0 +1,1 @@
+document.getElementById("email").innerHTML = "abc@bcas.lk";

@@ -21,6 +21,22 @@
         //Developer tool.
         console.log("Im logging something......");
 
+
+        var weight = 52.5; //kg
+        var height = 1.68; //m
+
+        var bmi = weight/(height*height);
+
+        document.write("<p>BMI is <b>"+bmi+"</b></p>");
+
+        if(bmi > 18.5){
+            document.write("<p>Normal</p>");
+        } else {
+            document.write("<p>Underweight</p>");
+        }
+        
+
+
     </script>
 
     <script src="../../js/script.js"></script>

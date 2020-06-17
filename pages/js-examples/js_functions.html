@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <style>
+        #click-div{
+            width :  200px;
+            height: 100px;
+            background: #b8e269;
+            vertical-align: middle;
+            border-radius: 20px;
+            box-shadow: 2px 2px 4px #442a2a;
+            border: 2px solid #000000;
+            padding: 20px;
+        }
+        #click-div>p{
+            text-align: center;
+            padding-top: 40px;
+            border: 2px solid #000000;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to JavaScript Functions!</h1>
+
+    <div>
+        <label>Enter your weight</label><br/>
+        <input type="number" id="weight" placeholder="Enter weight"/><br/>
+        <label>Enter your height</label><br/>
+        <input type="number" step="0.01" id="height" placeholder="Enter height"/><br/>
+        <button id="cal" onclick="calculator()" >Calculate</button>
+    </div>
+
+    <h2>Your bmi is <span id="bmival"></span></h2>
+
+    <div id="click-div">
+        <p id="click-p">Click Here</p>
+    </div>
+
+    <script>
+
+        //Using the addEventListener Method.A
+
+        var clickDiv = document.getElementById("click-div");
+        clickDiv.addEventListener("click", clickHere, true);
+        
+        clickDiv.addEventListener("mouseover", function(){ 
+            clickDiv.style.background = "#00FF00";
+        });
+        clickDiv.addEventListener("mouseleave", function(){ 
+            clickDiv.style.background = "#b8e269";
+        });
+
+        var clickP = document.getElementById("click-p");
+        clickP.addEventListener("click", clickPara);
+
+        function clickHere(){
+            alert("Clicked Div");
+        }
+
+        function clickPara(){
+            alert("Clciked P");
+        }
+
+
+        // JS Function.
+        function bmi(weight, height){
+            var bmi = weight/(height*height);
+            return bmi;
+        }
+
+        function roundfortwo(number){
+           number = number * 100;
+           var rounded = Math.round(number);
+           var rounded = rounded/100;
+           return rounded;
+        }
+
+        function calculator(){
+
+            var weight = document.getElementById("weight").value;
+            var height = document.getElementById("height").value;
+
+            var result = bmi(weight, height);
+
+            var rRes = roundfortwo(result);
+            console.log(result);
+            document.getElementById("bmival").innerHTML = rRes;
+        }
+
+        
+    </script>
+
+</body>
+</html>
